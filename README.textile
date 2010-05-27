@@ -1,0 +1,18 @@
+"We’ve developed a series of innovative tools to help cover the lower regions of web pages from unwanted Justin Bieber content. Shave away those Bieber mentions on web sites with our bookmarklet, Firefox Add-on, or JavaScript files."
+
+This is just Greg Leuch's javascript files packaged into a Chrome Extension.
+
+Repackaged by:
+
+Zen Lin
+http://www.google.com/profiles/infragoblin
+
+
+Credits:
+
+Greg Leuch (@gleuch | http://www.gleuch.com)
+
+Original Shaved Bieber - http://fffff.at/shaved-bieber
+
+This extension is the Google Chrome version of the Shaved Bieber Firefox Add-on.
+(http://assets.gleuch.com/projects/shaved-bieber/master.xpi?v=1)

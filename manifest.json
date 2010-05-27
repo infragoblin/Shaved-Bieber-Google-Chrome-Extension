@@ -1,0 +1,14 @@
+{
+  "name": "Shaved Bieber Extension",
+  "version": "1.0",
+  "description": "Shaved Bieber for Google Chome.",
+  "content_scripts": [
+    {
+      "matches": ["http://*/*"],
+      "js": ["jquery-latest.js", "shaved-bieber.js"]
+    }
+  ]
+
+  
+
+}
