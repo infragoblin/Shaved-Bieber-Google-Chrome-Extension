@@ -2,6 +2,10 @@
 
 This is just Greg Leuch's javascript files packaged into a Chrome Extension.
 
+Version 1.1 - Updated to work on Yahoo search results, still not 100%
+Version 1.2 - Updated to use userscript 1.0.1 
+Version 1.3 - Updated to handle asyncronous content, Yahoo is now working.
+
 Repackaged by:
 
 Zen Lin

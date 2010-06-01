@@ -1,0 +1,28 @@
+<html>
+<head>
+<script>
+
+    var targettab = null;
+    
+    function SelectedTab(tab) 
+    {
+
+     detailsObj=new Object();
+     detailsObj.file="shaved-bieber.js";
+     chrome.tabs.executeScript(tab.id, detailsObj, function(){})
+
+    }
+
+    function onUpdatedTab(tabid, objectinfo, tab) 
+    {
+       targettab = tab;
+       setTimeout( "SelectedTab(targettab );", 100); 
+
+    }
+
+   chrome.tabs.onUpdated.addListener(onUpdatedTab); 
+  
+</script>
+</head>
+<body></body>
+</html>
