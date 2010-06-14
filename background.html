@@ -10,18 +10,37 @@
      detailsObj=new Object();
      detailsObj.file="shaved-bieber.js";
      chrome.tabs.executeScript(tab.id, detailsObj, function(){})
-
+    
     }
 
     function onUpdatedTab(tabid, objectinfo, tab) 
     {
        targettab = tab;
-       setTimeout( "SelectedTab(targettab );", 100); 
+       var cancel = false;
+      
+       if (tab.url.indexOf("facebook") > -1) 
+           cancel = true;
+       if (tab.url.indexOf("escapistmagazine") > -1)
+           cancel = true;
+       if (tab.url.indexOf("hotmail") > -1)
+           cancel = true;
+
+       if (cancel == false )
+        setTimeout( "SelectedTab(targettab );", 1000); 
 
     }
 
+    function pageOnClicked(tab) 
+    {
+     detailsObj = new Object();
+     detailsObj.file="checktabs.js";
+
+     chrome.tabs.executeScript(tab.id, detailsObj, function(){})
+ 
+   }
+
    chrome.tabs.onUpdated.addListener(onUpdatedTab); 
-  
+
 </script>
 </head>
 <body></body>

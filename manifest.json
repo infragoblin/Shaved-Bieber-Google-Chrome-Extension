@@ -1,16 +1,19 @@
 {
   "name": "Shaved Bieber Extension",
-  "version": "1.3",
+  "version": "1.4",
   "description": "Shaved Bieber for Google Chome.",
   "background_page": "background.html",
-  "permissions": ["tabs", "http://*/*"],
-  "content_scripts": [{
+  "permissions": ["tabs","http://*/*"],
+  "icons": { "16": "justbieb16.png",
+           "48": "justbieb16.png"}
+,
+   "content_scripts": [{
       "matches": ["http://*/*"],
-      "js": ["jquery-latest.js","shaved-bieber.js"],
+      "js": ["jquery-latest.js"],
       "run_at": "document_idle",
       "all_frames": true
    }]
-
+ 
   
 
 }
